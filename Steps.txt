@@ -69,6 +69,12 @@ Learn More: https://vercel.link/cannot-load-project-settings
 Solution
 rmdir /s /q .vercel
 vercel
+----------------------------------------------------------------------------------------------------------
+//update
+
+remove     (noctugame2024-gmailcom -> mainfirst commit   ) from https://vercel.com/noctugames-projects-75e7dd48
+vercel
+OR
 vercel --prod     //update
 https://vercel.com/noctugames-projects-75e7dd48/~/domains/noctugame.com
 ---------------------------------------------------------------------------------------------------
