@@ -7,20 +7,6 @@
     "routes": [
       { "src": "/(.*)", "dest": "src/server.js" }
     ]
-    ,
-     
-      "redirects": [
-        {
-          "source": "http://noctugame.com",
-          "destination": "https://noctugame.com",
-          "permanent": true
-        },
-        {
-          "source": "/(.*)",
-          "destination": "https://noctugame.com/$1",
-          "permanent": true
-        }
-      ]
-    }
+}
     
   

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>NoctuGame - Staking | Earn Rewards with Your NXGT Tokens</title>
+    <meta name="description" content="Stake your NXGT tokens on NoctuGame to earn rewards and participate in our ecosystem. Learn more about our staking process and benefits.">
+    <meta name="keywords" content="NoctuGame, staking, NXGT tokens, earn rewards, blockchain, crypto staking, token staking, staking rewards">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="NoctuGame Team">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="NoctuGame - Staking | Earn Rewards with Your NXGT Tokens">
+    <meta itemprop="description" content="Stake your NXGT tokens on NoctuGame to earn rewards and participate in our ecosystem. Learn more about our staking process and benefits.">
+    <meta itemprop="image" content="URL_to_your_image">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NoctuGame - Staking | Earn Rewards with Your NXGT Tokens">
+    <meta name="twitter:description" content="Stake your NXGT tokens on NoctuGame to earn rewards and participate in our ecosystem. Learn more about our staking process and benefits.">
+    <meta name="twitter:image:src" content="URL_to_your_image">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="NoctuGame - Staking | Earn Rewards with Your NXGT Tokens" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://NoctuGame.com/staking.html" />
+    <meta property="og:image" content="URL_to_your_image" />
+    <meta property="og:description" content="Stake your NXGT tokens on NoctuGame to earn rewards and participate in our ecosystem. Learn more about our staking process and benefits." />
+    <meta property="og:site_name" content="NoctuGame" />
+    <!-- Link to canonical URL -->
+    <link rel="canonical" href="https://NoctuGame.com/staking.html" />
+    <!-- Alternate languages (if any) -->
+    <!-- <link rel="alternate" href="https://NoctuGame.com/es/staking.html" hreflang="es" /> -->
+    <!-- Token and wallet -->
+    <script src="assets/js/dexview.js" defer></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3modal@1.9.0/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coinbase/wallet-sdk@3.0.8/dist/index.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- magnific css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+    <!-- font awesome icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+</head>
+
+
+<body class="defult-home">
+
+    <!--Preloader area start here-->
+    <div class="loader_first">
+        <div class="circular-spinner"></div>
+    </div>
+    <!--Preloader area End here-->
+
+  <!--Header Start-->
+  <header id="gamfi-header" class="gamfi-header-section transparent-header">
+    <div class="menu-area menu-sticky">
+        <div class="container">
+            <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="header-menu">
+                        <ul class="nav-menu">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="project-details.html">Projects</a>
+                        </li>
+                        <li><a href="staking.html">Staking</a>
+                        </li>
+                        <li><a href="roadmap.html">Roadmap</a>
+                        </li>
+                        <li><a href="story.html">NoctuStory</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="gamfi-btn-area">
+                    <ul>
+                        <li>
+                            <a id="nav-expander" class="nav-expander bar" href="#">
+                                <div class="bar">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="buy-token">
+                            <a class="readon black-shape" href="#">
+                                <span class="btn-text">Buy Token </span>
+                                <i class="icon-arrow_down"></i>
+                                <span class="hover-shape1"></span>
+                                <span class="hover-shape2"></span>
+                                <span class="hover-shape3"></span>
+                            </a>
+                            <ul>
+                                <li><a href="https://www.dexview.com/polygon/0x7ac822195EAb6C1Ac91389700D7449536b0148fc" target="_blank"><img src="assets/images/icons/dexview.png" alt="gate"> DEXView</a></li>
+                                <li><a href="https://legacy.pinksale.finance/launchpad/0xc5CD80734B1F5384aE52Fa9b316d40DCF06d2C25?chain=Matic" target="_blank"><img src="assets/images/icons/pinksale.png" alt="gate"> Pinksale</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Canvas Mobile Menu start -->
+    <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+        <div class="close-btn">
+            <a id="nav-close2" class="nav-close">
+                <div class="line">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                </div>
+            </a>
+        </div>
+        <div class="sidebar-logo mb-30">
+            <a href="index.html"><img src="assets/images/logo-dark.png" alt=""></a>
+        </div>
+        <ul class="nav-menu">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="project-details.html">Projects</a>
+                </li>
+                <li><a href="staking.html">Staking</a>
+                </li>
+                <li><a href="roadmap.html">Roadmap</a>
+                </li>
+                <li><a href="story.html">NoctuStory</a>
+                </li>
+        <li class="menu-item-has-children">
+            <a href="#">Buy Token</a>
+            <ul class="sub-menu">
+                <li><a href="https://www.dexview.com/polygon/0x7ac822195EAb6C1Ac91389700D7449536b0148fc" target="_blank"><img src="assets/images/icons/dexview.png" alt="gate"> DEXView</a></li>
+                <li><a href="https://legacy.pinksale.finance/launchpad/0xc5CD80734B1F5384aE52Fa9b316d40DCF06d2C25?chain=Matic" target="_blank"><img src="assets/images/icons/pinksale.png" alt="gate"> Pinksale</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    </nav>
+    <!-- Canvas Menu end -->
+</header>
+<!--Header End-->
+
+    <!-- Breadcrumbs Section Start -->
+    <div class="gamfi-breadcrumbs-section breadcrumbs-style2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="breadcrumbs-area sec-heading">
+                        <div class="sub-inner mb-15">
+                            <a class="breadcrumbs-link" href="index.html">Home</a>
+                            <span class="sub-title">Staking</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title mb-0">Staking</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 breadcrumbs-form md-mt-30" style="display: none;">
+                    <div class="btn-area">
+                        <a class="readon black-shape" href="leaderboard.html">
+                            <span class="btn-text">Leaderboard</span>
+                            <span class="hover-shape1"></span>
+                            <span class="hover-shape2"></span>
+                            <span class="hover-shape3"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumbs  Section End -->
+
+<!-- Participat Detaisl Content Start -->
+<div class="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50">
+    <div class="container">
+        <div class="row pt-70">
+            <div class="col-lg-6 pr-25 md-pr-15">
+                <div class="project-item">
+                    <div class="project-info border-bottom-2">
+                        <h4 class="mb-15">Participate in NoctuGame Stake</h4>
+                        <h3 class="mb-15"><span id="totalStake">0.00</span> <span class="buse">USDT</span></h3>
+                        <span>Total Stake</span>
+                    </div>
+                    <ul class="date-listing mb-35">
+                        <li class="stake-tab-links" onclick="openTab(event, 'sixtyDays')" id="defaultOpen">
+                            <button>60 Days</button>
+                        </li>
+                        <li class="stake-tab-links" onclick="openTab(event, 'ninetyDays')">
+                            <button>90 Days</button>
+                        </li>
+                        <li class="stake-tab-links" onclick="openTab(event, 'hundredEightyDays')">
+                            <button>180 Days</button>
+                        </li>
+                        <li class="stake-tab-links" onclick="openTab(event, 'oneYear')">
+                            <button>1 Year</button>
+                        </li>
+                    </ul>
+                    <div class="project-content">
+                        <div id="sixtyDays" class="stake-tab-content">
+                            <div class="project-media mb-40">
+                                <ul class="project-listing">
+                                    <li>Lock period: <strong>60 days</strong> <span>APY Rate</span></li>
+                                    <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                class="big-text">35 %</span></a></li>
+                                    <li>Early unstake fee: <strong>25%</strong><span>*APY is dynamic</span></li>
+                                    <li>Status: <strong>Unlocked</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="ninetyDays" class="stake-tab-content">
+                            <div class="project-media mb-40">
+                                <ul class="project-listing">
+                                    <li>Lock period: <strong>90 days</strong> <span>APY Rate</span></li>
+                                    <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                class="big-text">40 %</span></a></li>
+                                    <li>Early unstake fee: <strong>25%</strong><span>*APY is dynamic</span></li>
+                                    <li>Status: <strong>Unlocked</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="hundredEightyDays" class="stake-tab-content">
+                            <div class="project-media mb-40">
+                                <ul class="project-listing">
+                                    <li>Lock period: <strong>180 days</strong> <span>APY Rate</span></li>
+                                    <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                class="big-text">45 %</span></a></li>
+                                    <li>Early unstake fee: <strong>25%</strong><span>*APY is dynamic</span></li>
+                                    <li>Status: <strong>Unlocked</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="oneYear" class="stake-tab-content">
+                            <div class="project-media mb-40">
+                                <ul class="project-listing">
+                                    <li>Lock period: <strong>1 year</strong> <span>APY Rate</span></li>
+                                    <li>Re-locks on registration: <strong>Yes</strong> <a href="#"><span
+                                                class="big-text">50 %</span></a></li>
+                                    <li>Early unstake fee: <strong>25%</strong><span>*APY is dynamic</span></li>
+                                    <li>Status: <strong>Unlocked</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-form-list">
+                        <h5 class="mb-18">Balance: <span id="userBalance">0.00</span> USDT</h5>
+                        <div class="balance-form-area mb-27">
+                            <input type="text" placeholder="00.00">
+                            <span class="max">MAX</span>
+                            <div class="white-shape-small approve">
+                                <input type="submit" value="Approve">
+                                <span class="hover-shape1"></span>
+                                <span class="hover-shape2"></span>
+                                <span class="hover-shape3"></span>
+                            </div>
+                        </div>
+                        <h5 class="mb-18">Staked: <span id="stakedAmount">0.00</span> USDT</h5>
+                        <div class="balance-form-area">
+                            <input type="text" id="withdrawAmount" placeholder="0.00">
+                            <span class="max">MAX</span>
+                            <div class="white-shape-small">
+                                <input type="submit" value="Withdraw">
+                                <span class="hover-shape1"></span>
+                                <span class="hover-shape2"></span>
+                                <span class="hover-shape3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pl-25 md-pl-15">
+                <div
+                    class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                    <div class="project-value">
+                        <h3 class="mb-15" id="totalValueLocked">$0.00</h3>
+                        <span>Total Value Locked</span>
+                    </div>
+                    <div class="project-value-image">
+                        <img class="heading-right-image" src="assets/images/project/rank.png" alt="rank" />
+                    </div>
+                </div>
+                <div
+                    class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                    <div class="project-value">
+                        <h3 class="mb-15" id="currentApy">0.00 %</h3>
+                        <span>APY</span>
+                    </div>
+                    <div class="project-value-image">
+                        <img class="heading-right-image" src="assets/images/project/rank2.png" alt="rank" />
+                    </div>
+                </div>
+                <div class="project-item project-value-inner d-flex justify-content-between align-items-center">
+                    <div class="project-value">
+                        <h3 class="mb-15" id="numberOfStakers">0</h3>
+                        <span>Number of Stakers</span>
+                    </div>
+                    <div class="project-value-image">
+                        <img class="heading-right-image" src="assets/images/project/rank3.png" alt="rank" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function getTimeRemaining(endtime) {
+            const total = Date.parse(endtime) - Date.parse(new Date());
+            const seconds = Math.floor((total / 1000) % 60);
+            const minutes = Math.floor((total / 1000 / 60) % 60);
+            const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+            const days = Math.floor(total / (1000 * 60 * 60 * 24));
+    
+            return {
+                total,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+    
+        function initializeClock(id, endtime) {
+            const clock = document.querySelector('.' + id);
+            const daysSpan = clock.querySelector('.days');
+            const hoursSpan = clock.querySelector('.hours');
+            const minutesSpan = clock.querySelector('.minutes');
+            const secondsSpan = clock.querySelector('.seconds');
+    
+            function updateClock() {
+                const t = getTimeRemaining(endtime);
+    
+                daysSpan.innerHTML = t.days;
+                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                }
+            }
+    
+            updateClock();
+            const timeinterval = setInterval(updateClock, 1000);
+        }
+    
+        const deadline = new Date(Date.parse('2024-09-Here is the continuation and completion of the staking section with the necessary corrections and improvements:
+
+</script>
+
+<!-- Participat Detaisl Content End -->
+
+
+
+  <!-- Footer Section Start -->
+  <div class="gamfi-footer-section">
+    <div class="container">
+        <div class="footer-cta-area text-center active-shape hover-shape-inner">
+            <h2 class="title mb-15">
+                DIVE INTO THE NOCTUGAME UNIVERSE
+            </h2>
+            <p class="dsc mb-40">
+                Experience the next generation gaming ecosystem for IGOs and NFT markets
+            </p>
+            <a class="theme-btn d-inline-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2500ms"
+                href="index.html">
+                <span>view project</span>
+                <div class="hover-shape1"></div>
+                <div class="hover-shape2"></div>
+                <div class="hover-shape3"></div>
+            </a>
+            <span class="border-shadow shadow-1"></span>
+            <span class="border-shadow shadow-2"></span>
+            <span class="border-shadow shadow-3"></span>
+            <span class="border-shadow shadow-4"></span>
+            <span class="hover-shape-bg hover_shape1"></span>
+            <span class="hover-shape-bg hover_shape2"></span>
+            <span class="hover-shape-bg hover_shape3"></span>
+        </div>
+    </div>
+    <div class="footer-area">
+        <div class="container">
+            <div class="sec-heading text-center">
+                <div class="sub-inner mb-52 mb-mb-30">
+                    <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                    <span class="sub-title white-color">Find us on Social</span>
+                    <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                </div>
+            </div>
+            <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                <ul class="footer-icon-list">
+                    <li><a href="https://twitter.com/NoctuGame" target="_blank"><i class="icon-twitter"></i></a></li>
+                    <li><a href="https://t.me/noctugame" target="_blank"><i class="icon-telegram"></i></a></li>
+                    <li><a href="https://discord.gg/baqyvcZs" target="_blank"><i class="icon-discord"></i></a></li>
+                    <li><a href="https://www.instagram.com/noctugame" target="_blank"><i class="icon-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/share/ELHW5wqypdhoTjHK/?mibextid=WC7FNe" target="_blank"><i class="icon-facebook"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-logo text-center mb-45"> 
+                <img src="assets/images/logo.png" alt="Footer-logo" />
+            </div>
+            <div class="footer-mainmenu text-center mb-20">
+                <ul>
+                    <li>
+                        <a href="project-details.html">Token info</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="terms-of-use.html">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright-area text-center">
+                <p>Copyright © 2024. All Rights Reserved by NoctuGame</p>
+            </div> 
+            </div>
+            <div class="scrollup text-center">
+                <a href="#gamfi-header"><i class="icon-arrow_up"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer Section End -->
+
+    <!-- Modal Section Start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="icon-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-20">Please select a wallet to connect to this marketplace</p>
+                    <div class="connect-section">
+                        <ul class="heading-list">
+                            <li>
+                                <a href="#" class="connect-meta">
+                                    <span>
+                                        <img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image">
+                                    </span>
+                                    MetaMask
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img src="assets/images/icons/coinbase.png" alt="Coinbase-Image">
+                                    </span>
+                                    Coinbase
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img src="assets/images/icons/trust.png" alt="Trust-Image">
+                                    </span>
+                                    Trust Wallet
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>
+                                        <img src="assets/images/icons/wallet.png" alt="Wallet-Image">
+                                    </span>
+                                    WalletConnect
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        By connecting your wallet, you agree to our
+                        <a href="#">
+                            <span class="modal-title">Terms of Service </span>
+                        </a>
+                        and our
+                        <a href="#">
+                            <span class="modal-title"> Privacy Policy</span>
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Section End-->
+
+    <!-- Modal Section Start-->
+    <div class="modal fade" id="download-metamask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="icon-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-20">Please download & install metamask extension!</p>
+                    <div class="connect-section">
+                        <ul class="heading-list">
+                            <li>
+                                <a target="_blank" href="https://metamask.io/download/">
+                                    <span>
+                                        <img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image">
+                                    </span>
+                                    MetaMask
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Section End-->
+
+    <!-- Meta Mask Connect -->
+    <script src="assets/js/web3.min.js"></script>
+    <script src="assets/js/metamask.js"></script>
+    <!-- modernizr js -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap v4.4.1 js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- popup.min js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- counter top js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="assets/js/metamaskhandler.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- staking js -->
+    <script src="assets/js/custom/staking.js"></script>
+</body>
+
+</html>
