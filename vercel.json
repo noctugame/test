@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "src/server.js", "use": "@vercel/node" },
+      { "src": "public/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "src/server.js" }
+    ]
+    ,
+     
+      "redirects": [
+        {
+          "source": "http://noctugame.com",
+          "destination": "https://noctugame.com",
+          "permanent": true
+        },
+        {
+          "source": "/(.*)",
+          "destination": "https://noctugame.com/$1",
+          "permanent": true
+        }
+      ]
+    }
+    
+  

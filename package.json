@@ -1,0 +1,41 @@
+{
+    "name": "noctugame",
+    "version": "1.0.0",
+    "description": "My New Project description.",
+    "main": "index.js",
+    "homepage": "https://noctugame.com",
+    "license": "MIT",
+    "dependencies": {
+        "@netlify/build": "^29.50.2",
+        "@types/jest": "22.1.4",
+        "@types/node": "^20.14.9",
+        "@types/puppeteer": "^7.0.4",
+        "@types/puppeteer-core": "^7.0.4",
+        "@types/request-promise": "^4.1.51",
+        "cheerio": "^1.0.0-rc.12",
+        "jest": "22.1.4",
+        "netlify-lambda": "^2.0.16",
+        "node": "^20.15.0",
+        "puppeteer-core": "^22.12.1",
+        "request": "^2.88.2",
+        "request-promises": "^1.1.0",
+        "serverless-http": "^3.2.0"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.5.30",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "netlify-cli": "^17.30.0",
+        "nodemon": "^2.0.22",
+        "puppeteer": "^22.12.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-scripts": "^5.0.1"
+    },
+    "author": "",
+    "keywords": []
+}

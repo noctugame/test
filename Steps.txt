@@ -1,0 +1,96 @@
+yarn init
+yarn add node --save
+yarn add cheerio --save-dev
+yarn add request-promises --save-dev
+yarn add request --save-dev
+yarn add @types/node --save-dev
+yarn add @types/request-promise --save
+yarn add puppeteer --save
+            OR
+yarn add puppeteer@18.1.0 --save-dev
+yarn add @types/puppeteer@18.1.0 --save-dev
+
+
+yarn add puppeteer-core --save
+yarn add @types/puppeteer-core --save-dev
+yarn add jest@22.1.4 --save
+yarn add @types/jest@22.1.4 --save
+yarn add express --save
+yarn add @netlify/build -g --save
+yarn add netlify-cli -g --save
+yarn add netlify-lambda --save
+yarn add serverless-http --save
+yarn add nodemon --save
+yarn add nodemon --save
+
+npm start
+OR
+node server.js
+
+http://localhost:3000
+
+npm i  @types/jquery --save-dev
+npm i react-scripts --save-dev  
+npm i react react-dom --save-dev 
+browserify m.js -o bundle.js  
+
+------------------for run web scraping----------------------
+1-Install necessary packages:
+
+npm init -y
+npm install express puppeteer --save-dev 
+npm install cors --save-dev 
+2-Create a server.js file:
+
+
+
+
+//"files": ["filename.js", "directory/", "glob/*.{js,json}"],*/
+//https://classic.yarnpkg.com/lang/en/docs/package-json/
+var cellData = $('.table-container table tbody tr:eq(1) td:eq(1) a').text()
+            
+console.log(cellData);
+
+
+$('.py-6 .columns .is-flex-grow-2 .ant-card .ant-card-body .table-container table tbody tr:eq(1) td:eq(1) a').text();
+
+
+// ---------------------------------------------------to run the code of the server ------------------------------------------------
+npm install -g browserify
+browserify m.js -o bundle.js   // where main.js is the code of that should be run in server
+
+--------------------------------------------------Deploy-------------------------------------------
+npm install -g vercel
+vercel login   ///noctugame2024@gmail.com///1Maiada1@2011
+vercel
+--------------------------------------------------------------------------------------------------
+Error: Could not retrieve Project Settings. To link your Project, remove the `.vercel` directory and deploy again.
+Learn More: https://vercel.link/cannot-load-project-settings
+Solution
+rmdir /s /q .vercel
+vercel
+vercel --prod     //update
+https://vercel.com/noctugames-projects-75e7dd48/~/domains/noctugame.com
+---------------------------------------------------------------------------------------------------
+
+? Which scope do you want to deploy to? noctugame's projects
+? Link to existing project? no
+? What’s your project’s name? noctu-game
+? In which directory is your code located? ./
+🔗  Linked to noctugames-projects-75e7dd48/noctu-game (created .vercel)
+🔍  Inspect: https://vercel.com/noctugames-projects-75e7dd48/noctu-game/2hYnZKU1KJwu4T9zqgG8ThoqEfXK [50s]
+✅  Production: https://noctu-game-r7mb59wy1-noctugames-projects-75e7dd48.vercel.app [50s]
+📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
+💡  To change the domain or build command, go to https://vercel.com/noctugames-projects-75e7dd48/noctu-game/settings
+
+
+-----------------------------------------------------------------------------------------------------------
+curitiba.ns.porkbun.com
+fortaleza.ns.porkbun.com
+maceio.ns.porkbun.com
+salvador.ns.porkbun.com
+
+muhamed.fcp@gmail.com
+Ibr@himD@haw!
+
+-----------------------------------------------------------------------------------------------------------
